@@ -13,11 +13,10 @@ function App() {
     <div style={{width:"100%",}} className = "some-class" >
 <Background/>
       <img src={"/LogoVF1.png"} style={{width:"100%",margin:"0",height:"90%",zIndex:"-1",backgroundColor:"rgba(255, 0, 0, 0.0"}}/>
-<Scanne/>
+{/* <Scanne/> */}
 
       {/* <Dashboard /> */}
       <Footer />
-
       <Profile />
       <Login />
     </div>
