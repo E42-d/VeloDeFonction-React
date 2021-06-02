@@ -25,10 +25,10 @@ function App() {
       />
       {/* <Scanne/> */}
 
-      {/* <Dashboard /> */}
+      <Dashboard />
       <Footer />
-      <Profile />
-      <Login />
+      {/* <Profile />
+      <Login /> */}
     </div>
   );
 }

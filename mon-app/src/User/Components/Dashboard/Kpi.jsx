@@ -13,7 +13,8 @@ const useStyles = makeStyles({
   root: {
     maxWidth: "100%",
     padding: "10px 10px 10px 10px",
-    margin: "10px 10px 10px 10px",
+    margin: "14px 14px 14px 14px",
+    boxShadow: " 2px 2px 2px 1px rgb(167,207,58,0.5)",
   },
 
   container: {
@@ -61,7 +62,7 @@ function Kpi() {
               22 gCO2e/km
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <EcoIcon />
+              <EcoIcon style={{ color: "#a7cf3a" }} />
               Impact CO2
             </Typography>
           </CardContent>
