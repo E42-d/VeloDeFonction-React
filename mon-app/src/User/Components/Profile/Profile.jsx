@@ -40,9 +40,9 @@ export default function Profile() {
         validationSchema={validationSchema}
         onSubmit={(values) => console.log(values)}
       >
-        
-        <FormField name="firstName" label="Prénom" value="Jean" />
-        
+        <div>
+        <FormField name="firstName" label="Prénom" value="Jean" /><span><Button><EditIcon /></Button></span>
+        </div>
         <FormField name="lastName" label="Nom" value="Dupont" />
        
         <FormField name="immat" type="text" label="Numéro immat" value="12WZ1" />
