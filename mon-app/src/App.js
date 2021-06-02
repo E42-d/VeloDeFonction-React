@@ -8,11 +8,10 @@ import Login from "./User/Components/Login/Login";
 function App() {
   return (
     <div className="App">
-      {/* <Dashboard /> */}
+      <Dashboard />
       <Footer />
-
-      <Profile />
-      <Login />
+      {/* <Profile />
+      <Login /> */}
     </div>
   );
 }

@@ -12,6 +12,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import CloseIcon from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
+import DirectionsBikeIcon from "@material-ui/icons/DirectionsBike";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -68,11 +69,13 @@ export default function PopupList() {
         </AppBar>
         <List>
           <ListItem button>
-            <ListItemText primary="3KM" secondary="13/05/2021" />
+            <ListItemText primary="13/05/2021" secondary="3KM" />
+            <DirectionsBikeIcon />
           </ListItem>
           <Divider />
           <ListItem button>
-            <ListItemText primary="3KM" secondary="14/05/2021" />
+            <ListItemText primary="14/05/2021" secondary="3KM" />
+            <DirectionsBikeIcon />
           </ListItem>
         </List>
       </Dialog>
