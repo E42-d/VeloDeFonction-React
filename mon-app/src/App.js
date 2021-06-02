@@ -11,7 +11,7 @@ function App() {
       {/* <Dashboard /> */}
       <Footer />
 
-      <Profile />
+      {/*<Profile />*/}
       <Login />
     </div>
   );

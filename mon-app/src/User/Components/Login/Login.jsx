@@ -42,7 +42,7 @@ function Login(props) {
         <ConnectField name="Mail" placeholder="Mail" />
         <ConnectField name="Password" placeholder="Password" />
         <div className={classes.click}>
-        <ConnectButton style={{width: '350px'}} title="Connexion" />
+        <ConnectButton title="Connexion" />
         </div>
         <ConnectButton title="Créer un compte" />
       </Connected>
