@@ -34,7 +34,7 @@ function Kpi() {
               50km
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <TrendingUpIcon />
+              <TrendingUpIcon style={{ color: "red" }} />
               Kilomètres cumulés sur l'année
             </Typography>
           </CardContent>
@@ -48,7 +48,7 @@ function Kpi() {
               15km
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <EventIcon />
+              <EventIcon style={{ color: "blue" }} />
               Kilomètres cumulés sur le mois
             </Typography>
           </CardContent>
@@ -76,7 +76,7 @@ function Kpi() {
               154€
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <EuroIcon />
+              <EuroIcon style={{ color: "e1e356" }} />
               Indemnités
             </Typography>
           </CardContent>
