@@ -28,6 +28,7 @@ export default function Profile() {
   return (
     <div className="profile">
       <h2>MON PROFIL </h2>
+      <p>Modification</p>
       <FormFormik
         initialValues={{
           firstname: "",

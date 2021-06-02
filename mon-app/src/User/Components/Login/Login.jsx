@@ -2,8 +2,8 @@
 import { makeStyles } from "@material-ui/core";
 import React from "react";
 import * as Yup from "yup";
-import ConnectButton from "./ConnectButton";
-import Connected from "./Connected";
+import ButtonFormik from "../../../Common/ButtonFormik";
+import FormFormik from "../../../Common/FormFormik";
 import ConnectField from "./ConnectField";
 
 const useStyles = makeStyles((theme) => ({
@@ -31,7 +31,7 @@ function Login(props) {
     const classes = useStyles();
   return (
     <div className={classes.connect}>
-      <Connected
+      <FormFormik
         initialValues={{
           Mail: "",
           Password: "",
@@ -41,11 +41,10 @@ function Login(props) {
       >
         <ConnectField name="Mail" placeholder="Mail" />
         <ConnectField name="Password" placeholder="Password" />
-        <div className={classes.click}>
-        <ConnectButton title="Connexion" />
-        </div>
-        <ConnectButton title="Créer un compte" />
-      </Connected>
+        
+        <ButtonFormik title="Connexion" />
+        <ButtonFormik title="Créer un compte" />
+      </FormFormik>
     </div>
   );
 }
