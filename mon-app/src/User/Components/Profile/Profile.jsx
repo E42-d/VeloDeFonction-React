@@ -15,11 +15,13 @@ const validationSchema = Yup.object().shape({
 });
 const useStyles= makeStyles((theme) => ({
   profile:{
-    display:"inline"
-  },
-  edit: {
-    display: "inline",
-   
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
+    margin: "auto",
+    marginTop: "150px",
+    width: "100%"
   }
 }));
 
@@ -27,9 +29,9 @@ export default function Profile() {
 
   const classes = useStyles();
   return (
-    <div className="profile">
+    <div className={classes.profile}>
       <h2>MON PROFIL </h2>
-      <p>Modification <Button><EditIcon /></Button></p>
+     
       <FormFormik
         initialValues={{
           firstname: "",
@@ -40,9 +42,9 @@ export default function Profile() {
         validationSchema={validationSchema}
         onSubmit={(values) => console.log(values)}
       >
-        <div>
-        <FormField name="firstName" label="Prénom" value="Jean" /><span><Button><EditIcon /></Button></span>
-        </div>
+        
+        <FormField name="firstName" label="Prénom" value="Jean" />
+        
         <FormField name="lastName" label="Nom" value="Dupont" />
        
         <FormField name="immat" type="text" label="Numéro immat" value="12WZ1" />
