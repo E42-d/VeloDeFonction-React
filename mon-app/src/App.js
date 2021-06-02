@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       {/* <Dashboard /> */}
-      <Footer />
+      {/*<Footer />*/}
 
       {/*<Profile />*/}
       <Login />
