@@ -12,7 +12,7 @@ function App() {
       <Footer />
 
       <Profile />
-      <Login />
+      {/* <Login /> */} <Login />
     </div>
   );
 }
