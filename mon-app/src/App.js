@@ -27,9 +27,10 @@ function App() {
       {/* <Scanne/> */} 
 
       {/* <Dashboard /> */}<Dashboard /> 
-      <Footer />
+     
       {/* <Profile />
       <Login /> */}
+       <Footer />
     </div>
   );
 }
