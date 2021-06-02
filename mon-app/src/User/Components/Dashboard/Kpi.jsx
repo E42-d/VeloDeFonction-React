@@ -13,7 +13,8 @@ const useStyles = makeStyles({
   root: {
     maxWidth: "100%",
     padding: "10px 10px 10px 10px",
-    margin: "10px 10px 10px 10px",
+    margin: "14px 14px 14px 14px",
+    boxShadow: " 2px 2px 2px 1px rgb(167,207,58,0.5)",
   },
 
   container: {
@@ -33,7 +34,7 @@ function Kpi() {
               50km
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <TrendingUpIcon />
+              <TrendingUpIcon style={{ color: "red" }} />
               Kilomètres cumulés sur l'année
             </Typography>
           </CardContent>
@@ -47,7 +48,7 @@ function Kpi() {
               15km
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <EventIcon />
+              <EventIcon style={{ color: "blue" }} />
               Kilomètres cumulés sur le mois
             </Typography>
           </CardContent>
@@ -61,7 +62,7 @@ function Kpi() {
               22 gCO2e/km
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <EcoIcon />
+              <EcoIcon style={{ color: "#a7cf3a" }} />
               Impact CO2
             </Typography>
           </CardContent>
@@ -75,7 +76,7 @@ function Kpi() {
               154€
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              <EuroIcon />
+              <EuroIcon style={{ color: "e1e356" }} />
               Indemnités
             </Typography>
           </CardContent>
