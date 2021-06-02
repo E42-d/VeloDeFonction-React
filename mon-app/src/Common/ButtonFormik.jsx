@@ -10,7 +10,11 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: '45px', 
       backgroundColor: '#cf9f25',
       color: 'white',
-      width: '225px'
+      width: '225px',
+      height: '45px',
+      "&:hover": {
+        backgroundColor: '#103f54'
+      }
     },
   },
 }));

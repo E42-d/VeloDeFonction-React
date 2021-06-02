@@ -1,11 +1,10 @@
 import * as Yup from "yup";
 import FormField from "../../../Common/FormField";
-import EditIcon from "@material-ui/icons/Edit";
 import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonFormik from "../../../Common/ButtonFormik";
 import FormFormik from "../../../Common/FormFormik";
-import { Button } from "@material-ui/core";
+
 
 
 const validationSchema = Yup.object().shape({
@@ -20,8 +19,8 @@ const useStyles= makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     margin: "auto",
-    marginTop: "150px",
-    width: "100%"
+    marginBottom: "70px",
+    width: "100%",
   }
 }));
 
@@ -51,10 +50,8 @@ export default function Profile() {
        
         <FormField name="password" label="Mot de passe" value="*****" />
         
-        
         <FormField name="KM domicile/travail" value="4" label="Distance domicile/travail" variant="filled" />
         <FormField name="coeff" label="Coeff de cotisation" value="20cents/km" variant="filled" />
-        {/* mettre en props pour les calculs */}
         <ButtonFormik title="Enregistrer" />
       </FormFormik>
     </div>
