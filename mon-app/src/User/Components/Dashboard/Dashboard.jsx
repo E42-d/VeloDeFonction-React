@@ -5,10 +5,9 @@ import KmUsers from "./KmUsers";
 import PopupList from "./PopupList";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1),
-    },
+  container: {
+    flexGrow: 1,
+    marginBottom: "120px",
   },
 }));
 
@@ -16,7 +15,7 @@ function Dashboard() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.container}>
       <KmUsers />
       <Kpi />
       <PopupList />
