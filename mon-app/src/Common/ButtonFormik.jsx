@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       borderRadius: '45px', 
       backgroundColor: '#cf9f25',
-      color: 'white', 
+      color: 'white',
+      width: '225px'
     },
   },
 }));

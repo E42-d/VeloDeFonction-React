@@ -4,13 +4,17 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
+<<<<<<< HEAD
+=======
     "@material-ui/icons": "^4.11.2",
+>>>>>>> 837f045fa1eae5b505a83644f5d914e213bee403
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "formik": "^2.2.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-qr-reader": "^2.2.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2",
     "yup": "^0.32.9"
