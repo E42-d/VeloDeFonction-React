@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Kpi from "./Kpi";
-
 import KmUsers from "./KmUsers";
 import PopupList from "./PopupList";
 
