@@ -1,5 +1,5 @@
-import React,{ useState } from 'react';
-import QrReader from "react-qr-reader"
+{/*import React,{ useState } from 'react';
+import QrReader from "react-qr-reader";
 
 function Scanne() {
     const [scanResultWebCam, setScanResultWebCam] = useState("")
@@ -28,4 +28,4 @@ function Scanne() {
     );
 }
 
-export default Scanne;
+export default Scanne;*/}

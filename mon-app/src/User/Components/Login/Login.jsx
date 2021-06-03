@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "column",
         alignItems: "center",
         margin: "auto",
-        marginTop: "150px",
+        marginTop: "100px",
       },
       click: {
         marginTop: "10px",
