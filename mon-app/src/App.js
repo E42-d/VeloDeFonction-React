@@ -11,6 +11,7 @@ import Popupaccount from "./User/Components/Account/Popupaccount";
 function App() {
   return (
     <div className="App">
+      
       <div style={{ width: "100%" }} className="some-class">
         {" "}
       </div>
@@ -25,7 +26,7 @@ function App() {
           backgroundColor: "rgba(255, 0, 0, 0.0",
         }}
       />
-      {/* <Scanne/> */}
+      {/* <Scanne/> */} 
 
       {/*<Dashboard />
       <Footer />
