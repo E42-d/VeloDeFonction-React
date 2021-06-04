@@ -4,6 +4,7 @@ import React from "react";
 import * as Yup from "yup";
 import ButtonFormik from "../../../Common/ButtonFormik";
 import FormFormik from "../../../Common/FormFormik";
+import PopupAccount from "../Account/PopupAccount";
 import ConnectField from "./ConnectField";
 
 const useStyles = makeStyles((theme) => ({
@@ -43,7 +44,6 @@ function Login(props) {
         <ConnectField name="Password" placeholder="Password" />
         
         <ButtonFormik title="Connexion" />
-        <ButtonFormik title="Créer un compte" />
       </FormFormik>
     </div>
   );
