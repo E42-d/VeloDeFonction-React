@@ -5,6 +5,8 @@ import Profile from "./User/Components/Profile/Profile";
 import Login from "./User/Components/Login/Login";
 import Background from "./Main/Background";
 import Scanne from "./User/Components/Scan/Scanne";
+import Createaccount from "./User/Components/Account/CreateAccount";
+import Popupaccount from "./User/Components/Account/PopupAccount";
 
 function App() {
   return (
@@ -24,13 +26,13 @@ function App() {
           backgroundColor: "rgba(255, 0, 0, 0.0",
         }}
       />
-      {/* <Scanne/> */} 
-
-      {/* <Dashboard /> */}<Dashboard /> 
-     
-      {/* <Profile />
-      <Login /> */}
-       <Footer />
+    {/* <Scanne/> */} 
+    {/*<Dashboard />{/*
+    {/*<Footer />{/*
+    {/*<Profile />*/}
+    <Login />
+    <Popupaccount />
+    {/*<Createaccount />*/}
     </div>
   );
 }
