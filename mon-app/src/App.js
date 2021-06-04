@@ -23,12 +23,12 @@ function App() {
           backgroundColor: "rgba(255, 0, 0, 0.0",
         }}
       />
-      {/* <Scanne/> */}
+      <Scanne />
 
-      <Dashboard />
-      <Footer />
-      {/* <Profile />
-      <Login /> */}
+      {/* <Dashboard /> */}
+      {/* <Footer />
+      <Profile /> */}
+      {/* <Login /> */}
     </div>
   );
 }
