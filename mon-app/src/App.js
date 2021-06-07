@@ -5,7 +5,7 @@ import Profile from "./User/Components/Profile/Profile";
 import Login from "./User/Components/Login/Login";
 import Background from "./Main/Background";
 import Scanne from "./User/Components/Scan/Scanne";
-import Createaccount from "./User/Components/Account/CreateAccount";
+
 import Popupaccount from "./User/Components/Account/PopupAccount";
 
 function App() {
@@ -31,10 +31,10 @@ function App() {
     {/*<Dashboard />{/*
     {/*<Footer />{/*
     {/*<Profile />*/}
-    <Login />
+    <Login /> 
     <Popupaccount />
-    {/*<Createaccount />*/}
- 
+  
+    
     </div>
   );
 }
