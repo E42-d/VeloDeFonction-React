@@ -5,10 +5,13 @@ import Profile from "./User/Components/Profile/Profile";
 import Login from "./User/Components/Login/Login";
 import Background from "./Main/Background";
 import Scanne from "./User/Components/Scan/Scanne";
+import Createaccount from "./User/Components/Account/CreateAccount";
+import Popupaccount from "./User/Components/Account/PopupAccount";
 
 function App() {
   return (
     <div className="App">
+      
       <div style={{ width: "100%" }} className="some-class">
         {" "}
       </div>
@@ -23,12 +26,15 @@ function App() {
           backgroundColor: "rgba(255, 0, 0, 0.0",
         }}
       />
-      {/* <Scanne /> */}
-
-      {/* <Dashboard /> */}
-      {/* <Footer /> */}
-      {/* <Profile />   */}
-      <Login />
+ 
+    {/* <Scanne/> */} 
+    {/*<Dashboard />{/*
+    {/*<Footer />{/*
+    {/*<Profile />*/}
+    <Login />
+    <Popupaccount />
+    {/*<Createaccount />*/}
+ 
     </div>
   );
 }
