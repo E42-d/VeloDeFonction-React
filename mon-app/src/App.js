@@ -26,6 +26,7 @@ function App() {
           backgroundColor: "rgba(255, 0, 0, 0.0",
         }}
       />
+ 
     {/* <Scanne/> */} 
     {/*<Dashboard />{/*
     {/*<Footer />{/*
@@ -33,6 +34,7 @@ function App() {
     <Login />
     <Popupaccount />
     {/*<Createaccount />*/}
+ 
     </div>
   );
 }
