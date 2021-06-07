@@ -29,9 +29,10 @@ function App() {
     {/* <Scanne/> */} 
     {/*<Dashboard />{/*
     {/*<Footer />{/*
-    {/*<Profile />*/}
+    {/*<Profile />*/}<Profile />
     <Login /> 
     <PopupAccount />
+    <Footer />
   
     
     </div>
