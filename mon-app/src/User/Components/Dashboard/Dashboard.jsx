@@ -9,6 +9,12 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     marginBottom: "120px",
   },
+  pop: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "20px",
+  },
 }));
 
 function Dashboard() {
@@ -18,7 +24,9 @@ function Dashboard() {
     <div className={classes.container}>
       <KmUsers />
       <Kpi />
-      <PopupList />
+      <div className={classes.pop}>
+        <PopupList />
+      </div>
     </div>
   );
 }

@@ -26,9 +26,10 @@ function App() {
           backgroundColor: "rgba(255, 0, 0, 0.0",
         }}
       />
-    {/*<Scanne/> */} 
-    {/*<Dashboard /> */} 
-    {/*<Footer />*/}
+ 
+    {/* <Scanne/> */} 
+    {/*<Dashboard />{/*
+    {/*<Footer />{/*
     {/*<Profile />*/}
     <Login /> 
     <Popupaccount />
