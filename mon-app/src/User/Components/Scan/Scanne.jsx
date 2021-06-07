@@ -1,4 +1,4 @@
-{/*import React,{ useState } from 'react';
+import React,{ useState } from 'react';
 import QrReader from "react-qr-reader";
 
 function Scanne() {
@@ -28,4 +28,4 @@ function Scanne() {
     );
 }
 
-export default Scanne;*/}
+export default Scanne;
