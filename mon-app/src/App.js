@@ -5,8 +5,8 @@ import Profile from "./User/Components/Profile/Profile";
 import Login from "./User/Components/Login/Login";
 import Background from "./Main/Background";
 import Scanne from "./User/Components/Scan/Scanne";
-import Createaccount from "./User/Components/Account/CreateAccount";
 import Popupaccount from "./User/Components/Account/PopupAccount";
+import Createaccount from "./User/Components/Account/Createaccount";
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
     <Login />
     <Popupaccount />
     {/*<Createaccount />*/}
- 
+    <Createaccount />
     </div>
   );
 }
