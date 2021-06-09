@@ -23,9 +23,9 @@ function App() {
           backgroundColor: "rgba(255, 0, 0, 0.0",
         }}
       />
-      {/* <Scanne/> */}
+       <Scanne/> 
 
-      <Dashboard />
+      {/*<Dashboard />*/}
       {/*<Footer />*/}
       {/* <Profile />
       <Login /> */}
