@@ -11,7 +11,6 @@ import Popupaccount from "./User/Components/Account/PopupAccount";
 function App() {
   return (
     <div className="App">
-      
       <div style={{ width: "100%" }} className="some-class">
         {" "}
       </div>
@@ -23,18 +22,20 @@ function App() {
           margin: "0",
           height: "90%",
           zIndex: "-1",
-          backgroundColor: "rgba(255, 0, 0, 0.0",
+          backgroundColor: "rgba(255, 0, 0, 0.0)",
         }}
       />
- 
-    {/* <Scanne/> */} 
-    {/*<Dashboard />{/*
-    {/*<Footer />{/*
-    {/*<Profile />*/}
-    <Login /> 
-    <Popupaccount />
-  
-    
+
+      {/* <Scanne/> */}
+      {/*<Dashboard />{/*}
+    // {/*<Footer />{/* 
+    <Profile />
+      {/* <Login /> 
+    <Popupaccount /> */}
+      {/* <Login />
+      <Popupaccount /> */}
+      {/* <Dashboard /> */}
+      <Profile />
     </div>
   );
 }
