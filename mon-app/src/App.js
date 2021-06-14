@@ -7,6 +7,7 @@ import Background from "./Main/Background";
 import Scanne from "./User/Components/Scan/Scanne";
 
 import Popupaccount from "./User/Components/Account/PopupAccount";
+import Factory from "./User/Components/View 7/Factory";
 
 function App() {
   return (
@@ -28,12 +29,12 @@ function App() {
       />
  
     {/* <Scanne/> */} 
-    {/*<Dashboard />{/*
+    {/*<Dashboard />*/}
     {/*<Footer />{/*
     {/*<Profile />*/}
-    <Login /> 
-    <Popupaccount />
-  
+    {/*<Login />*/}
+    {/*<Popupaccount />*/}
+    
     
     </div>
   );

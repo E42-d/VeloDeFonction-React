@@ -41,7 +41,7 @@ function Login(props) {
         onSubmit={(values) => console.log(values)}
       >
         <ConnectField name="Mail" placeholder="Mail" />
-        <ConnectField name="Password" placeholder="Password" />
+        <ConnectField name="Password" type="password" placeholder="Password" />
         
         <ButtonFormik title="Connexion" />
       </FormFormik>
