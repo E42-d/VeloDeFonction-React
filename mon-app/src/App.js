@@ -29,7 +29,7 @@ function App() {
     {/* <Scanne/> */} 
     {/*<Dashboard />{/*
     {/*<Footer />{/*
-    {/*<Profile />*/}<Profile />
+    {/*<Profile />*/}<Dashboard />
     <Login /> 
     <PopupAccount />
     <Footer />

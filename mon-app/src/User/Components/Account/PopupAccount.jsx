@@ -24,6 +24,15 @@ const validationSchema = Yup.object().shape({
 });
 
 const useStyles = makeStyles((theme) => ({
+  createaccount:{
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
+    margin: "auto",
+    marginBottom: "70px",
+    width: "100%",
+  },
   appBar: {
     position: "relative",
   },
@@ -79,7 +88,7 @@ export default function PopupAccount() {
   };
 
   return (
-    <div>
+    <div className={classes.createaccount}>
       <div className={classes.compte}>
       <button className={classes.bouton} onClick={handleClickOpen}>
         CRÉER UN COMPTE
@@ -127,10 +136,15 @@ export default function PopupAccount() {
         <FormField name="mail" type="text" label="Mail" value="" />
         <FormField name="password" label="Mot de passe" value="" />
         <FormField name="immat" type="text" label="Numéro immat" value="" />
-        <FormControl>
-              <InputLabel id="demo-simple-select-label">
+       
+        <FormControl styles={{minWidth:"30ch"}} >
+       
+              <InputLabel 
+              styles={{width:"125ch"}}
+              id="demo-simple-select-label">
                 Entreprise
               </InputLabel>
+             
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -138,11 +152,14 @@ export default function PopupAccount() {
                 //value={}
                 name="entreprise"
                 //onChange={handleChange}
+                
               >
               <MenuItem value={""}></MenuItem>
               <MenuItem value={"WCS"}>Wild Code School</MenuItem>
               </Select>
+             
             </FormControl>
+           
         <FormField name="kilomètre" label="Distance domicile/travail" value="" />
         <div className={classes.ok}>
         <ButtonFormik title="Validez" />
