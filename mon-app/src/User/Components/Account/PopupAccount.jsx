@@ -20,10 +20,19 @@ import { FormControl, InputLabel, MenuItem, Select } from "@material-ui/core";
 const validationSchema = Yup.object().shape({
   firstName: Yup.string(),
   lastName: Yup.string(),
-  immat: Yup.string()
+  immat: Yup.string(),
 });
 
 const useStyles = makeStyles((theme) => ({
+  createaccount:{
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
+    margin: "auto",
+    marginBottom: "70px",
+    width: "100%",
+  },
   appBar: {
     position: "relative",
   },
@@ -31,30 +40,30 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(1),
     flex: 1,
   },
-  profil:{
+  profil: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
 
   },
-  ok:{
-    marginTop:"15px",
-    marginLeft:"35px",
+  ok: {
+    marginTop: "15px",
+    marginLeft: "35px",
   },
   compte: {
-    display:"flex",
-    justifyContent:"center",
-    marginTop:"20px",
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "20px",
   },
   bouton: {
-    borderRadius: '45px', 
-    backgroundColor: '#cf9f25',
-    color: 'white',
-    width: '225px',
-    height: '45px',
+    borderRadius: "45px",
+    backgroundColor: "#cf9f25",
+    color: "white",
+    width: "225px",
+    height: "45px",
     border: "none",
     "&:hover": {
-      backgroundColor: '#103f54'
+      backgroundColor: "#103f54",
     },
   },
 }));
@@ -76,11 +85,11 @@ export default function PopupAccount() {
   };
 
   return (
-    <div>
+    <div className={classes.createaccount}>
       <div className={classes.compte}>
-      <button className={classes.bouton} onClick={handleClickOpen}>
-        CRÉER UN COMPTE
-      </button>
+        <button className={classes.bouton} onClick={handleClickOpen}>
+          CRÉER UN COMPTE
+        </button>
       </div>
       <Dialog
         fullScreen
@@ -105,29 +114,26 @@ export default function PopupAccount() {
           </Toolbar>
         </AppBar>
         <div className={classes.profil}>
-        <FormFormik
-        initialValues={{
-          firstname: "",
-          lastname: "",
-          mail: "",
-          password:"",
-          immat: "",
-          entreprise: "",
-          kilometre: "",
-        }}
-        validationSchema={validationSchema}
-        onSubmit={(values) => console.log(values)}
-      >
-        
-        <FormField name="firstName" label="Prénom" value="" />
-        <FormField name="lastName" label="Nom" value="" />
-        <FormField name="mail" type="text" label="Mail" value="" />
-        <FormField name="password" label="Mot de passe" value="" />
-        <FormField name="immat" type="text" label="Numéro immat" value="" />
-        <FormControl>
-              <InputLabel id="demo-simple-select-label">
-                Entreprise
-              </InputLabel>
+          <FormFormik
+            initialValues={{
+              firstname: "",
+              lastname: "",
+              mail: "",
+              password: "",
+              immat: "",
+              entreprise: "",
+              kilometre: "",
+            }}
+            validationSchema={validationSchema}
+            onSubmit={(values) => console.log(values)}
+          >
+            <FormField name="firstName" label="Prénom" value="" />
+            <FormField name="lastName" label="Nom" value="" />
+            <FormField name="mail" type="text" label="Mail" value="" />
+            <FormField name="password" label="Mot de passe" value="" />
+            <FormField name="immat" type="text" label="Numéro immat" value="" />
+            <FormControl>
+              <InputLabel id="demo-simple-select-label">Entreprise</InputLabel>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -135,17 +141,23 @@ export default function PopupAccount() {
                 //value={}
                 name="entreprise"
                 //onChange={handleChange}
+                
               >
-              <MenuItem value={""}></MenuItem>
-              <MenuItem value={"WCS"}>Wild Code School</MenuItem>
+                <MenuItem value={""}></MenuItem>
+                <MenuItem value={"WCS"}>Wild Code School</MenuItem>
               </Select>
+             
             </FormControl>
-        <FormField name="kilomètre" label="Distance domicile/travail" value="" />
-        <div className={classes.ok}>
-        <ButtonFormik title="Validez" />
+            <FormField
+              name="kilomètre"
+              label="Distance domicile/travail"
+              value=""
+            />
+            <div className={classes.ok}>
+              <ButtonFormik title="Validez" />
+            </div>
+          </FormFormik>
         </div>
-      </FormFormik>
-      </div>
       </Dialog>
     </div>
   );

@@ -5,14 +5,11 @@ import Profile from "./User/Components/Profile/Profile";
 import Login from "./User/Components/Login/Login";
 import Background from "./Main/Background";
 import Scanne from "./User/Components/Scan/Scanne";
-
-import Popupaccount from "./User/Components/Account/PopupAccount";
-import Factory from "./User/Components/View 7/Factory";
+import PopupAccount from "./User/Components/Account/PopupAccount";
 
 function App() {
   return (
     <div className="App">
-      
       <div style={{ width: "100%" }} className="some-class">
         {" "}
       </div>
@@ -24,7 +21,7 @@ function App() {
           margin: "0",
           height: "90%",
           zIndex: "-1",
-          backgroundColor: "rgba(255, 0, 0, 0.0",
+          backgroundColor: "rgba(255, 0, 0, 0.0)",
         }}
       />
  
