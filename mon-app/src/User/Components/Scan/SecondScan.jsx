@@ -2,11 +2,12 @@ import React,{ useState } from 'react';
 import QrReader from "react-qr-reader";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import {useHistory} from 'react-router-dom';
 
     
 
 function SecondScan() {
+    let history = useHistory();
     const [scanResultWebCam, setScanResultWebCam] = useState("")
     const [displayToast,SetDisplayToast] = useState(false)
 
@@ -28,7 +29,7 @@ function SecondScan() {
 SetDisplayToast(!displayToast);
 console.log({scanResultWebCam})
         }
-     
+        history.push('/')
     }
     return (
         <div>
