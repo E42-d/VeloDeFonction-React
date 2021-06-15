@@ -26,13 +26,12 @@ function App() {
       />
  
     {/* <Scanne/> */} 
-    {/*<Dashboard />{/*
+    {/*<Dashboard />*/}
     {/*<Footer />{/*
-    {/*<Profile />*/}<Dashboard />
-    <Login /> 
-    <PopupAccount />
-    <Footer />
-  
+    {/*<Profile />*/}
+    {/*<Login />*/}
+    {/*<Popupaccount />*/}
+    
     
     </div>
   );

@@ -37,17 +37,14 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
   },
   title: {
-    marginLeft: theme.spacing(2),
+    marginLeft: theme.spacing(1),
     flex: 1,
   },
   profil: {
     display: "flex",
-    justifyContent: "center",
     flexDirection: "column",
-    //alignItems: "center",
-    marginBottom: "70px",
-    marginLeft: "25px",
-    //width: "100%",
+    alignItems: "center",
+
   },
   ok: {
     marginTop: "15px",
