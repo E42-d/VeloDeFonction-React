@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "column",
         alignItems: "center",
         margin: "auto",
-        marginTop: "150px",
+        marginTop: "100px",
       },
       click: {
         marginTop: "10px",
@@ -43,7 +43,6 @@ function Login(props) {
         <ConnectField name="Password" placeholder="Password" />
         
         <ButtonFormik title="Connexion" />
-        <ButtonFormik title="Créer un compte" />
       </FormFormik>
     </div>
   );

@@ -21,6 +21,12 @@ const useStyles = makeStyles({
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
   },
+
+  content: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
 
 function Kpi() {
@@ -30,10 +36,20 @@ function Kpi() {
       <Card className={classes.root}>
         <CardActionArea>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
               50km
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              className={classes.content}
+            >
               <TrendingUpIcon style={{ color: "red" }} />
               Kilomètres cumulés sur l'année
             </Typography>
@@ -44,10 +60,20 @@ function Kpi() {
       <Card className={classes.root}>
         <CardActionArea>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
               15km
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              className={classes.content}
+            >
               <EventIcon style={{ color: "blue" }} />
               Kilomètres cumulés sur le mois
             </Typography>
@@ -58,10 +84,20 @@ function Kpi() {
       <Card className={classes.root}>
         <CardActionArea>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
               22 gCO2e/km
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              className={classes.content}
+            >
               <EcoIcon style={{ color: "#a7cf3a" }} />
               Impact CO2
             </Typography>
@@ -72,10 +108,21 @@ function Kpi() {
       <Card className={classes.root}>
         <CardActionArea>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
               154€
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              className={classes.content}
+              style={{ marginTop: "30%" }}
+            >
               <EuroIcon style={{ color: "e1e356" }} />
               Indemnités
             </Typography>

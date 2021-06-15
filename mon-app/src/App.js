@@ -4,11 +4,12 @@ import Dashboard from "./User/Components/Dashboard/Dashboard";
 import Profile from "./User/Components/Profile/Profile";
 import Login from "./User/Components/Login/Login";
 import Background from "./Main/Background";
-import Scanne from "./User/Components/Scan/Scanne";
+import ScanDashboard from "./User/Components/Scan/ScanDashboard";
 
 function App() {
   return (
     <div className="App">
+      
       <div style={{ width: "100%" }} className="some-class">
         {" "}
       </div>
@@ -23,12 +24,15 @@ function App() {
           backgroundColor: "rgba(255, 0, 0, 0.0",
         }}
       />
-       <Scanne/> 
-
-      {/*<Dashboard />*/}
-      {/*<Footer />*/}
-      {/* <Profile />
-      <Login /> */}
+ 
+   <ScanDashboard/>
+    {/*<Dashboard />{/*
+    {/*<Footer />{/*
+    {/*<Profile />*/}
+    {/*<Login /> */}
+    {/*<Popupaccount />*/}
+  
+    
     </div>
   );
 }
