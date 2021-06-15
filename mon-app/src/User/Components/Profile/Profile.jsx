@@ -66,6 +66,7 @@ export default function Profile() {
         <FormField
           name="password"
           label="Mot de passe"
+          type="password"
           value={description.password}
         />
 
