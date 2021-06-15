@@ -17,10 +17,22 @@ import DirectionsBikeIcon from "@material-ui/icons/DirectionsBike";
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
+    backgroundColor: "#103f54",
   },
   title: {
     marginLeft: theme.spacing(2),
     flex: 1,
+  },
+  button: {
+    margin: theme.spacing(1),
+    borderRadius: "45px",
+    backgroundColor: "#cf9f25",
+    color: "white",
+    width: "225px",
+    height: "45px",
+    "&:hover": {
+      backgroundColor: "#103f54",
+    },
   },
 }));
 
@@ -42,8 +54,12 @@ export default function PopupList() {
 
   return (
     <div>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Liste pointage
+      <Button
+        color="primary"
+        onClick={handleClickOpen}
+        className={classes.button}
+      >
+        Historique
       </Button>
       <Dialog
         fullScreen
