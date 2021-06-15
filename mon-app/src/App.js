@@ -7,6 +7,7 @@ import Background from "./Main/Background";
 import ScanDashboard from "./User/Components/Scan/ScanDashboard";
 import PopupAccount from "./User/Components/Account/PopupAccount";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -41,7 +42,8 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-      
+     
+      <ToastContainer/>
     </div>
   );
 }
