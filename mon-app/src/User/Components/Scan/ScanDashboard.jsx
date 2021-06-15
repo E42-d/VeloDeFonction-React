@@ -5,7 +5,10 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
+
 function ScanDashboard() {
+
     const [displayScan, setDisplayScan] = useState(true)
     const [displayToast,SetDisplayToast] = useState(false)
     const handlescan = ()=>{
@@ -20,6 +23,7 @@ function ScanDashboard() {
             progress: undefined,
             });
             SetDisplayToast(!displayToast)
+
 
     }
   
