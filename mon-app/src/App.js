@@ -4,6 +4,7 @@ import Dashboard from "./User/Components/Dashboard/Dashboard";
 import Profile from "./User/Components/Profile/Profile";
 import Login from "./User/Components/Login/Login";
 import Background from "./Main/Background";
+import ScanDashboard from "./User/Components/Scan/ScanDashboard";
 import Scanne from "./User/Components/Scan/Scanne";
 import PopupAccount from "./User/Components/Account/PopupAccount";
 
@@ -25,13 +26,13 @@ function App() {
         }}
       />
  
-    {/* <Scanne/> */} 
-    {/*<Dashboard />*/}
+   <ScanDashboard/>
+    {/*<Dashboard />{/*
     {/*<Footer />{/*
     {/*<Profile />*/}
-    {/*<Login />*/}
+    {/*<Login /> */}
     {/*<Popupaccount />*/}
-    
+  
     
     </div>
   );
