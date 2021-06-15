@@ -24,21 +24,27 @@ const validationSchema = Yup.object().shape({
 });
 
 const useStyles = makeStyles((theme) => ({
+  createaccount:{
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
+    margin: "auto",
+    marginBottom: "70px",
+    width: "100%",
+  },
   appBar: {
     position: "relative",
   },
   title: {
-    marginLeft: theme.spacing(2),
+    marginLeft: theme.spacing(1),
     flex: 1,
   },
   profil: {
     display: "flex",
-    justifyContent: "center",
     flexDirection: "column",
-    //alignItems: "center",
-    marginBottom: "70px",
-    marginLeft: "25px",
-    //width: "100%",
+    alignItems: "center",
+
   },
   ok: {
     marginTop: "15px",
@@ -79,7 +85,7 @@ export default function PopupAccount() {
   };
 
   return (
-    <div>
+    <div className={classes.createaccount}>
       <div className={classes.compte}>
         <button className={classes.bouton} onClick={handleClickOpen}>
           CRÉER UN COMPTE
@@ -135,10 +141,12 @@ export default function PopupAccount() {
                 //value={}
                 name="entreprise"
                 //onChange={handleChange}
+                
               >
                 <MenuItem value={""}></MenuItem>
                 <MenuItem value={"WCS"}>Wild Code School</MenuItem>
               </Select>
+             
             </FormControl>
             <FormField
               name="kilomètre"
