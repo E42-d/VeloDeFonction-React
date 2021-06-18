@@ -29,10 +29,10 @@ function App() {
           {" "}
         </div>
         <Switch>
-          <Route exact path="/" component={Dashboard} />
+          <Route exact path="/" component={Login} />
           <Route exact path="/scan" component={ScanDashboard} />
           <Route exact path="/profile" component={Profile} />
-          <Route exact path="/login" component={Login} />
+          <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/account" component={PopupAccount} />
         </Switch>
         <Footer />
