@@ -40,7 +40,7 @@ function Footer() {
         <Link to="/profile">
           <BottomNavigationAction label="Profil" icon={<PersonIcon />} />
         </Link>
-        <Link to="/">
+        <Link to="/dashboard">
           <BottomNavigationAction
             label="Tableau"
             icon={<DirectionsBikeIcon />}
