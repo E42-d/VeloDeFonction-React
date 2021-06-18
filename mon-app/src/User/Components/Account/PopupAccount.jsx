@@ -6,16 +6,16 @@ import Dialog from "@material-ui/core/Dialog";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
 import CloseIcon from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
 
 import * as Yup from "yup";
 import FormField from "../../../Common/FormField";
-
+import InfoIcon from '@material-ui/icons/Info';
 import ButtonFormik from "../../../Common/ButtonFormik";
 import FormFormik from "../../../Common/FormFormik";
 import { FormControl, InputLabel, MenuItem, Select } from "@material-ui/core";
+import Infos from "./Infos";
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string(),
@@ -33,12 +33,17 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "70px",
     width: "100%",
   },
-  appBar: {
-    position: "relative",
+  modif2: {
+    display: "flex",
+    justifyContent: "flex-end",
   },
   title: {
     marginLeft: theme.spacing(1),
     flex: 1,
+  },
+  dialogue2: {
+    height: "700px",
+    width: "500px"
   },
   profil: {
     display: "flex",
@@ -84,6 +89,10 @@ export default function PopupAccount() {
     setOpen(false);
   };
 
+  const handleClick = () => {
+    setOpen(true);
+  };
+
   return (
     <div className={classes.createaccount}>
       <div className={classes.compte}>
@@ -92,13 +101,12 @@ export default function PopupAccount() {
         </button>
       </div>
       <Dialog
-        fullScreen
-        open={open}
-        onClose={handleClose}
-        TransitionComponent={Transition}
-      >
-        <AppBar className={classes.appBar}>
-          <Toolbar>
+      fullScreen
+       open={open}
+       onClose={handleClose}
+       aria-labelledby="alert-dialog-title"
+       aria-describedby="alert-dialog-description">
+        <div className={classes.modif2}>
             <IconButton
               edge="start"
               color="inherit"
@@ -107,12 +115,9 @@ export default function PopupAccount() {
             >
               <CloseIcon />
             </IconButton>
+        </div>
+        <h2 style={{display: "flex", justifyContent: "center"}}>CRÉER VOTRE COMPTE</h2>
 
-            <Button autoFocus color="inherit" onClick={handleClose}>
-              Créer un compte
-            </Button>
-          </Toolbar>
-        </AppBar>
         <div className={classes.profil}>
           <FormFormik
             initialValues={{
@@ -152,12 +157,15 @@ export default function PopupAccount() {
               name="kilomètre"
               label="Distance domicile/travail"
               value=""
-            />
+            /> 
+          <Infos />
+            
             <div className={classes.ok}>
               <ButtonFormik title="Validez" />
             </div>
           </FormFormik>
         </div>
+        
       </Dialog>
     </div>
   );
