@@ -3,7 +3,7 @@ import React from 'react';
 function Background() {
     return (
         <div>
-     <img src={"/Background.png"} style={{
+     <img src={"/Background.png"} alt="velipro" style={{
          width:"100%",
          height:"100%",
          objectFit:"cover",
