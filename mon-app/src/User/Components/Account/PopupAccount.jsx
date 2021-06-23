@@ -150,13 +150,14 @@ export default function PopupAccount() {
                 <MenuItem value={"WCS"}>Wild Code School</MenuItem>
               </Select>
             </FormControl>
-            <FormField
-              name="kilomètre"
-              label="Distance domicile/travail"
-              value=""
-            />
-            <Infos />
-
+            <div>
+              <FormField
+                name="kilomètre"
+                label="Distance domicile/travail"
+                value=""
+              />
+              <Infos />
+            </div>
             <div className={classes.ok}>
               <ButtonFormik title="Validez" />
             </div>
