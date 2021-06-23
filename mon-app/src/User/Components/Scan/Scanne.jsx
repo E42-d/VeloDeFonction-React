@@ -24,10 +24,10 @@ function Scanne({onScan}) {
           
             <QrReader
             delay={300}
-            style={{with:"100%"}}
+            style={{with:"100%", margin:"50px"}}
             onError={handleErrorWebCam}
             onScan={handleScanWebCam}
-            style={{with:"100%",margin:"50px",}}
+            
             />
             
         </div>

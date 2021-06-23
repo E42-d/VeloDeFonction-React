@@ -1,17 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
-
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
-
 import * as Yup from "yup";
 import FormField from "../../../Common/FormField";
-import InfoIcon from '@material-ui/icons/Info';
 import ButtonFormik from "../../../Common/ButtonFormik";
 import FormFormik from "../../../Common/FormFormik";
 import { FormControl, InputLabel, MenuItem, Select } from "@material-ui/core";
@@ -89,9 +83,9 @@ export default function PopupAccount() {
     setOpen(false);
   };
 
-  const handleClick = () => {
+  /*const handleClick = () => {
     setOpen(true);
-  };
+  };*/
 
   return (
     <div className={classes.createaccount}>
@@ -104,6 +98,7 @@ export default function PopupAccount() {
       fullScreen
        open={open}
        onClose={handleClose}
+       TransitionComponent={Transition}
        aria-labelledby="alert-dialog-title"
        aria-describedby="alert-dialog-description">
         <div className={classes.modif2}>

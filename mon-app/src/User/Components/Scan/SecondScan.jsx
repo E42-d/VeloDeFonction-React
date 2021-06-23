@@ -16,7 +16,7 @@ function SecondScan() {
 
     if (result === "hello") {
       setScanResultWebCam(result);
-      toast.success("👏 votre trajet à bien était enregistré", {
+      toast.success("👏 Votre trajet a bien été enregistré", {
         position: "bottom-center",
         autoClose: 4000,
         hideProgressBar: false,
@@ -25,11 +25,11 @@ function SecondScan() {
         draggable: true,
         progress: undefined,
       });
-      history.push("/");
+      history.push("/dashboard");
       SetDisplayToast(!displayToast);
       console.log({ scanResultWebCam });
     } else if(result !== null) {
-      toast.warn("👏 votre trajet à bien était enregistré", {
+      toast.error("❌ Ce QRCode n'est pas valide", {
         position: "bottom-center",
         autoClose: 4000,
         hideProgressBar: false,
@@ -44,10 +44,9 @@ function SecondScan() {
       <h2>Scanner le QR code affiché</h2>
       <QrReader
         delay={300}
-        style={{ with: "100%" }}
+        style={{ with: "100%", margin: "50px" }}
         onError={handleErrorWebCam}
         onScan={handleScanWebCam}
-        style={{ with: "100%", margin: "50px" }}
       />
       {displayToast && <ToastContainer />}
     </div>
