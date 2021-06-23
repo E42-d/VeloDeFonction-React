@@ -6,6 +6,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
 import * as Yup from "yup";
 import FormField from "../../../Common/FormField";
+import InfoIcon from "@material-ui/icons/Info";
 import ButtonFormik from "../../../Common/ButtonFormik";
 import FormFormik from "../../../Common/FormFormik";
 import { FormControl, InputLabel, MenuItem, Select } from "@material-ui/core";
@@ -18,7 +19,7 @@ const validationSchema = Yup.object().shape({
 });
 
 const useStyles = makeStyles((theme) => ({
-  createaccount:{
+  createaccount: {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
@@ -37,13 +38,12 @@ const useStyles = makeStyles((theme) => ({
   },
   dialogue2: {
     height: "700px",
-    width: "500px"
+    width: "500px",
   },
   profil: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-
   },
   ok: {
     marginTop: "15px",
@@ -95,23 +95,26 @@ export default function PopupAccount() {
         </button>
       </div>
       <Dialog
-      fullScreen
-       open={open}
-       onClose={handleClose}
-       TransitionComponent={Transition}
-       aria-labelledby="alert-dialog-title"
-       aria-describedby="alert-dialog-description">
+        fullScreen
+        open={open}
+        onClose={handleClose}
+        TransitionComponent={Transition}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
         <div className={classes.modif2}>
-            <IconButton
-              edge="start"
-              color="inherit"
-              onClick={handleClose}
-              aria-label="close"
-            >
-              <CloseIcon />
-            </IconButton>
+          <IconButton
+            edge="start"
+            color="inherit"
+            onClick={handleClose}
+            aria-label="close"
+          >
+            <CloseIcon />
+          </IconButton>
         </div>
-        <h2 style={{display: "flex", justifyContent: "center"}}>CRÉER VOTRE COMPTE</h2>
+        <h2 style={{ display: "flex", justifyContent: "center" }}>
+          CRÉER VOTRE COMPTE
+        </h2>
 
         <div className={classes.profil}>
           <FormFormik
@@ -133,34 +136,32 @@ export default function PopupAccount() {
             <FormField name="password" label="Mot de passe" value="" />
             <FormField name="immat" type="text" label="Numéro immat" value="" />
             <FormControl>
-              <InputLabel id="demo-simple-select-label">Entreprise</InputLabel>
+              <InputLabel id="demo-simple-select-label"> Entreprise</InputLabel>
               <Select
+                style={{ width: "270px" }}
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 color="primary"
                 //value={}
                 name="entreprise"
                 //onChange={handleChange}
-                
               >
                 <MenuItem value={""}></MenuItem>
                 <MenuItem value={"WCS"}>Wild Code School</MenuItem>
               </Select>
-             
             </FormControl>
             <FormField
               name="kilomètre"
               label="Distance domicile/travail"
               value=""
-            /> 
-          <Infos />
-            
+            />
+            <Infos />
+
             <div className={classes.ok}>
               <ButtonFormik title="Validez" />
             </div>
           </FormFormik>
         </div>
-        
       </Dialog>
     </div>
   );
