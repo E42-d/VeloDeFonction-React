@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import ButtonFormik from "../../../Common/ButtonFormik";
 import FormFormik from "../../../Common/FormFormik";
 import ConnectField from "./ConnectField";
-
+import PopupAccount from "../Account/PopupAccount";
 const useStyles = makeStyles((theme) => ({
     connect: {
         display: "flex",
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "column",
         alignItems: "center",
         margin: "auto",
-        marginTop: "150px",
+        marginTop: "100px",
       },
       click: {
         marginTop: "10px",
@@ -40,10 +40,10 @@ function Login(props) {
         onSubmit={(values) => console.log(values)}
       >
         <ConnectField name="Mail" placeholder="Mail" />
-        <ConnectField name="Password" placeholder="Password" />
+        <ConnectField name="Password" type="password" placeholder="Password" />
         
         <ButtonFormik title="Connexion" />
-        <ButtonFormik title="Créer un compte" />
+        <PopupAccount />
       </FormFormik>
     </div>
   );

@@ -1,57 +1,87 @@
 import * as Yup from "yup";
 import FormField from "../../../Common/FormField";
-import EditIcon from "@material-ui/icons/Edit";
-import React from 'react';
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonFormik from "../../../Common/ButtonFormik";
 import FormFormik from "../../../Common/FormFormik";
-import Icon from '@material-ui/core/Icon';
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string(),
   lastName: Yup.string(),
-  immat: Yup.string()
+  immat: Yup.string(),
 });
-const useStyles= makeStyles((theme) => ({
-  profile:{
-    display:"inline"
+const useStyles = makeStyles((theme) => ({
+  profile: {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
+    margin: "auto",
+    marginBottom: "70px",
+    width: "100%",
   },
-  edit: {
-    display: "inline",
-   
-  }
 }));
 
 export default function Profile() {
-
   const classes = useStyles();
+
+  const description = {
+    lastname: "Dino",
+    firstname: "Toto",
+    numberImmat: "1201212",
+    password: "secret123",
+    km: "6km",
+    coeff: "20cent/km",
+  };
+
   return (
-    <div className="profile">
+    <div className={classes.profile}>
       <h2>MON PROFIL </h2>
-      <p>Modification</p>
+
       <FormFormik
         initialValues={{
           firstname: "",
           lastname: "",
           immat: "",
-          password:""
+          password: "",
         }}
         validationSchema={validationSchema}
         onSubmit={(values) => console.log(values)}
       >
-        
-        <FormField name="firstName" label="Prénom" />
-       
-        <FormField name="lastName" label="Nom" />
-       
-        <FormField name="immat" type="text" label="Numéro immat" />
-       
-        <FormField name="password" label="Mot de passe" endIcon={<EditIcon></EditIcon>}>******</FormField>
-        
-        
-        <FormField name="KM domicile/travail" value="4" label="Distance domicile/travail" variant="filled" >3 KM</FormField>
-        <FormField name="coeff" label="Coeff de cotisation" value="20cents/km" variant="filled" />
-        {/* mettre en props pour les calculs */}
+        <FormField
+          name="firstName"
+          label="Prénom"
+          value={description.firstname}
+        />
+
+        <FormField name="lastName" label="Nom" value={description.lastname} />
+
+        <FormField
+          name="immat"
+          type="text"
+          label="Numéro immat"
+          value={description.numberImmat}
+        />
+
+        <FormField
+          name="password"
+          label="Mot de passe"
+          type="password"
+          value={description.password}
+        />
+
+        <FormField
+          name="KM domicile/travail"
+          value={description.km}
+          label="Distance domicile/travail"
+          variant="filled"
+        />
+        <FormField
+          name="coeff"
+          label="Coeff de cotisation"
+          value={description.coeff}
+          variant="filled"
+        />
         <ButtonFormik title="Enregistrer" />
       </FormFormik>
     </div>

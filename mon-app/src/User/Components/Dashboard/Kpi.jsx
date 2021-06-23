@@ -14,7 +14,6 @@ const useStyles = makeStyles({
     maxWidth: "100%",
     padding: "10px 10px 10px 10px",
     margin: "14px 14px 14px 14px",
-    boxShadow: " 2px 2px 2px 1px rgb(167,207,58,0.5)",
   },
 
   container: {
@@ -29,6 +28,13 @@ const useStyles = makeStyles({
   },
 });
 
+const kpi = {
+  annualKm: 50,
+  monthKm: 15,
+  co2: " 22 gCO2e/km",
+  indemnite: "154€",
+};
+
 function Kpi() {
   const classes = useStyles();
   return (
@@ -42,7 +48,7 @@ function Kpi() {
               component="h2"
               style={{ display: "flex", justifyContent: "center" }}
             >
-              50km
+              {kpi.annualKm}
             </Typography>
             <Typography
               variant="body2"
@@ -66,7 +72,7 @@ function Kpi() {
               component="h2"
               style={{ display: "flex", justifyContent: "center" }}
             >
-              15km
+              {kpi.monthKm}
             </Typography>
             <Typography
               variant="body2"
@@ -90,7 +96,7 @@ function Kpi() {
               component="h2"
               style={{ display: "flex", justifyContent: "center" }}
             >
-              22 gCO2e/km
+              {kpi.co2}
             </Typography>
             <Typography
               variant="body2"
@@ -114,16 +120,15 @@ function Kpi() {
               component="h2"
               style={{ display: "flex", justifyContent: "center" }}
             >
-              154€
+              {kpi.indemnite}
             </Typography>
             <Typography
               variant="body2"
               color="textSecondary"
               component="p"
               className={classes.content}
-              style={{ marginTop: "30%" }}
             >
-              <EuroIcon style={{ color: "e1e356" }} />
+              <EuroIcon style={{ color: "#cf9f25" }} />
               Indemnités
             </Typography>
           </CardContent>
