@@ -6,6 +6,8 @@ import ButtonFormik from "../../../Common/ButtonFormik";
 import FormFormik from "../../../Common/FormFormik";
 import ConnectField from "./ConnectField";
 import PopupAccount from "../Account/PopupAccount";
+//import { useHistory } from "react-router";
+
 const useStyles = makeStyles((theme) => ({
     connect: {
         display: "flex",
@@ -21,14 +23,30 @@ const useStyles = makeStyles((theme) => ({
       },
     }));
 
-const validationSchema = Yup.object().shape({
-  Mail: Yup.string().required("Veuillez saisir votre adresse mail"),
-  Password: Yup.string().required("Veuillez saisir votre mot de passe"),
-});
+export default function Login(props) {
+  const validationSchema = Yup.object().shape({
+    Mail: Yup.string().required("Veuillez saisir votre adresse mail"),
+    Password: Yup.string().required("Veuillez saisir votre mot de passe"),
+  });
 
-
-function Login(props) {
     const classes = useStyles();
+    //const history = useHistory();
+
+    /*const handleConnection = async () => {
+      try {
+        const token = await axios.post(
+          //"",
+          form
+        );
+
+    console.log(token.data);
+    localStorage.setItem("userToken", token.data.access_token);
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token.data.access_token}`,
+          },
+        };*/
+
   return (
     <div className={classes.connect}>
       <FormFormik
@@ -42,11 +60,11 @@ function Login(props) {
         <ConnectField name="Mail" placeholder="Mail" />
         <ConnectField name="Password" type="password" placeholder="Password" />
         
-        <ButtonFormik title="Connexion" />
+        <ButtonFormik title="Connexion" /*onClick={handleConnection}*//>
         <PopupAccount />
       </FormFormik>
     </div>
   );
 }
 
-export default Login;
+

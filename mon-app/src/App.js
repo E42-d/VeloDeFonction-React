@@ -16,6 +16,7 @@ function App() {
         <Background />
         <img
           src={"/LogoVF1.png"}
+          alt="Logo Vélipro"
           style={{
             width: "100%",
             margin: "0",
