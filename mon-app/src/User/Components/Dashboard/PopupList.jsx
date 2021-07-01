@@ -9,7 +9,6 @@ import Divider from "@material-ui/core/Divider";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
 import CloseIcon from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
 import DirectionsBikeIcon from "@material-ui/icons/DirectionsBike";
@@ -17,10 +16,22 @@ import DirectionsBikeIcon from "@material-ui/icons/DirectionsBike";
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
+    backgroundColor: "#103f54",
   },
   title: {
     marginLeft: theme.spacing(2),
     flex: 1,
+  },
+  button: {
+    margin: theme.spacing(1),
+    borderRadius: "45px",
+    backgroundColor: "#cf9f25",
+    color: "white",
+    width: "225px",
+    height: "45px",
+    "&:hover": {
+      backgroundColor: "#103f54",
+    },
   },
 }));
 
@@ -42,8 +53,12 @@ export default function PopupList() {
 
   return (
     <div>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Liste pointage
+      <Button
+        color="primary"
+        onClick={handleClickOpen}
+        className={classes.button}
+      >
+        Historique
       </Button>
       <Dialog
         fullScreen
@@ -63,7 +78,7 @@ export default function PopupList() {
             </IconButton>
 
             <Button autoFocus color="inherit" onClick={handleClose}>
-              Liste pointage
+              Historique des trajets
             </Button>
           </Toolbar>
         </AppBar>

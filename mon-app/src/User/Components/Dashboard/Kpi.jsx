@@ -27,6 +27,7 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
 });
+
 const kpi = {
   annualKm: 50,
   monthKm: 15,
@@ -126,9 +127,8 @@ function Kpi() {
               color="textSecondary"
               component="p"
               className={classes.content}
-              style={{ marginTop: "30%" }}
             >
-              <EuroIcon style={{ color: "e1e356" }} />
+              <EuroIcon style={{ color: "#cf9f25" }} />
               Indemnités
             </Typography>
           </CardContent>

@@ -6,6 +6,7 @@ import PhotoCameraIcon from "@material-ui/icons/PhotoCamera";
 import PersonIcon from "@material-ui/icons/Person";
 import DirectionsBikeIcon from "@material-ui/icons/DirectionsBike";
 import BuildIcon from "@material-ui/icons/Build";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -33,9 +34,18 @@ function Footer() {
         showLabels
         className={classes.root}
       >
-        <BottomNavigationAction label="Photo" icon={<PhotoCameraIcon />} />
-        <BottomNavigationAction label="Profil" icon={<PersonIcon />} />
-        <BottomNavigationAction label="Tableau" icon={<DirectionsBikeIcon />} />
+        <Link to="/scan">
+          <BottomNavigationAction label="Photo" icon={<PhotoCameraIcon />} />
+        </Link>
+        <Link to="/profile">
+          <BottomNavigationAction label="Profil" icon={<PersonIcon />} />
+        </Link>
+        <Link to="/dashboard">
+          <BottomNavigationAction
+            label="Tableau"
+            icon={<DirectionsBikeIcon />}
+          />
+        </Link>
         <BottomNavigationAction label="Maintenance" icon={<BuildIcon />} />
       </BottomNavigation>
     </div>

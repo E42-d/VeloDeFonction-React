@@ -5,12 +5,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
+
 function ScanDashboard() {
+
     const [displayScan, setDisplayScan] = useState(true)
     const [displayToast,SetDisplayToast] = useState(false)
     const handlescan = ()=>{
         setDisplayScan(!displayScan)
-        toast.success('👏 votre vélo à bien était enregistré', {
+        toast.success('👏 votre vélo a bien été enregistré', {
             position: "bottom-center",
             autoClose: 4000,
             hideProgressBar: false,
@@ -20,6 +23,7 @@ function ScanDashboard() {
             progress: undefined,
             });
             SetDisplayToast(!displayToast)
+
 
     }
   
