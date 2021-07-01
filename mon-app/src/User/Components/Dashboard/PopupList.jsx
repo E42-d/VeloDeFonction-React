@@ -78,7 +78,7 @@ export default function PopupList() {
             </IconButton>
 
             <Button autoFocus color="inherit" onClick={handleClose}>
-              Liste pointage
+              Historique des trajets
             </Button>
           </Toolbar>
         </AppBar>
